@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio | Adrian Rizqynaya</title>  <meta name="description" content="Portofolio kreatif — hero, about, projects. Dibuat dengan HTML, CSS, dan JavaScript.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand" style="display:flex;align-items:center;">
+        <img class="logo" src="./img/keren.jpg" alt="" >
+        <div>
+          <div style="font-weight:700;color: wh">Adrian Rizqynaya Putra</div>
+          <div style="font-size:12px;color: gainsboro">Universitas Jember</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id = "about" class="hero">
+      <div class="hero-left">
+        <div class="eyebrow">Halo, saya</div>
+        <h1>Adrian Rizqynaya<br>
+          <span style="color:var(--muted);font-weight:500">
+            Junior IT Support
+          </span>
+        </h1>
+        <p class="lead">Tersertifikasi Badan Nasional Sertifikasi Profesi
+            dengan latar belakang pendidikan di bidang jaringan komputer dan
+            pengalaman magang selama enam bulan. Telah menulis buku berjudul
+            "Membangun Web Server, Mail Server, dan Cloud Server menggunakan
+            Linux Mint" sebagai bentuk kontribusi di bidang sistem jaringan dan
+            server.</p>
+          <a href="https://instagram.com/rizqynaya" target="_blank"><img src="https://github.com/tandpfun/skill-icons/raw/main/icons/Instagram.svg" alt="" width="20"></a>
+          <a href="mailto:arizqynaya@gmail.com" target="_blank"><img src="https://github.com/tandpfun/skill-icons/raw/main/icons/Gmail-Dark.svg" alt="" width="20"></a>
+          <a href="https://linkedin.com/rizqynaya" target="_blank"><img src="https://github.com/tandpfun/skill-icons/raw/main/icons/LinkedIn.svg" alt="" width="20"></a>
+          <a href="https://kutekno.news.blog" target="_blank"><img src="https://github.com/tandpfun/skill-icons/raw/main/icons/Wordpress.svg" alt="" width="20"></a>
+      </div>
+
+      <aside class="card">
+        <div class="profile">
+        <img class="logo" src="./img/keren.jpg" alt=""> </div>
+          <div>
+            <div style="font-weight:700">Adrian Rizqynaya Putra</div>
+            <div style="font-size:13px;color:var(--muted)">Web Developer — UI/UX enthusiast</div>
+            <div style="margin-top:8px;color:var(--muted);font-size:13px">Universitas Jember</div>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stat">Python</div>
+          <div class="stat">C#</div>
+          <div class="stat">HTML</div>
+          <div class="stat">PHP</div>
+          <div class="stat">Java Script</div>
+          <div class="stat">CSS</div>
+          <div class="stat">SQL</div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-grid">
+        <div class="education-card" onclick="openModal('education1')">
+          <span class="school">SMKN 2 Jember</span>
+          <span style="color:var(--muted)">2021-2024</span>
+        </div>
+        <div class="education-card" onclick="openModal('education2')">
+          <span class="school">SMPN 1 Ambulu</span>
+          <span style="color:var(--muted)">2018-2021</span>
+        </div>
+        <div class="education-card" onclick="openModal('education3')">
+          <span class="school">SDN Tegalsari 01</span>
+          <span style="color:var(--muted)">2012-2018</span>
+        </div>
+      </div>
+    </section>
+
+    <div id="education1" class="modal"><div class="modal-content">
+      <img src="./img/STM.jpg" alt="" width="500">
+      <h3>SMKN 2 Jember</h3><p>Sekolah ini merupakan Sekolah Menengah Kejuruan (SMK) negeri berdiri pada tanggal 5 September 1960 di bawah naungan Kementerian Pendidikan, Kebudayaan, Riset dan Teknologi dan Pemerintah Daerah dengan Akreditasi A dan terdapat 21 Jurusan.</p>
+      <button onclick="closeModal('education1')">Tutup</button>
+    </div></div>
+
+    <div id="education2" class="modal"><div class="modal-content">
+      <img src="./img/smp1.jpg" alt="" width="480">
+      <h3>SMPN 1 Ambulu</h3><p>Syukur alhamdulillah kami panjatkan kehadiran Allah SWT, Tuhan yang Maha Esa karena atas karunia dan bimbingannya SMPN 1 Ambulu dapat hadir di tengah-tengah masyarakat melalui situs website ini. Sekalipun saat ini website sekolah kami masih pada taraf penyempurnaan, namun hal itu dikarenakan kami selalu ingin meningkatkan kinerja berbasis teknologi informasi dan komunikasi.</p>
+      <button onclick="closeModal('education2')">Tutup</button>
+    </div></div>
+
+    <div id="education3" class="modal"><div class="modal-content">
+      <img src="./img/sdn1.jpg" alt="" width="500">
+      <h3>SDN Tegalsari 01</h3><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus optio doloribus facilis ipsa id ex autem aspernatur porro magnam consequatur aut, deleniti sit odio, eligendi eius blanditiis atque culpa facere!</p>
+      <button onclick="closeModal('education3')">Tutup</button>
+    </div></div>
+    </section>
+
+    <section id="projects">
+      <h2>Project</h2>
+      <div class="projects-grid">
+        <div class="project-card" onclick="openModal('project1')">
+          <h3>NyampeSana</h3>
+          <p>Sistem informasi pengiriman paket.</p>
+        </div>
+        <div class="project-card" onclick="openModal('project2')">
+          <h3>UrHomey</h3>
+          <p>Sistem penyewaan kost.</p>
+        </div>
+        <div class="project-card" onclick="openModal('project3')">
+          <h3>MovieLand</h3>
+          <p>Sistem pemesanan tiket bioskop.</p>
+        </div>
+        <div class="project-card" onclick="openModal('project4')">
+          <h3>Buku</h3>
+          <p>Membangun web server, mail server dan cloud server</p>
+        </div>
+      </div>
+    </section>
+
+    <div id="project1" class="modal"><div class="modal-content">
+      <img src="./img/nyampesana.jpg" alt="" width="500">
+      <h3>NyampeSana</h3><p>aplikasi
+        Nyampe Sana hadir sebagai solusi untuk menjawab tantangan tersebut. Aplikasi ini
+        mengintegrasikan teknologi canggih dengan kebutuhan logistik modern, memastikan
+        bahwa pengiriman barang dapat dilakukan secara efisien, transparan, dan memuaskan.</p>
+      <button onclick="closeModal('project1')">Tutup</button>
+    </div></div>
+
+    <div id="project2" class="modal"><div class="modal-content">
+      <img src="./img/urhomey.jpg" alt="" width="500">
+      <h3>UrHomey</h3><p>Perancangan Sistem Informasi Manajemen Kos Digital Pada Rumah Kos Letter U Pak Heru adalah sebuah sistem digital yang dirancang untuk membantu pengelolaan rumah kos secara lebih efisien dan terstruktur.</p>
+      <button onclick="closeModal('project2')">Tutup</button>
+    </div></div>
+
+    <div id="project3" class="modal"><div class="modal-content">
+      <img src="./img/movielandDashboard.jpg" alt="" width="500">
+      <h3>MovieLand</h3><p>Keberadaan aplikasi MovieLane ini tidak hanya diharapkan untuk meningkatkan kenyamanan konsumen tetapi juga memberikan dampak positif bagi bisnis perbioskopan. Bagi konsumen, aplikasi ini menawarkan kemudahan akses, kecepatan transaksi, dan keamanan yang lebih terjamin. Sementara bagi pihak bioskop, sistem digital ini dapat membantu mengurangi beban kerja staf, meminimalisir kesalahan administrasi, serta membuka peluang untuk pengembangan layanan berbasis data, seperti program loyalitas atau rekomendasi film berdasarkan preferensi pengguna. Dengan demikian, aplikasi ini tidak sekadar menjadi alat pemesanan tiket, tetapi juga bagian dari strategi transformasi digital industri bioskop di Indonesia untuk menghadapi tantangan di era modern.</p>
+      <button onclick="closeModal('project3')">Tutup</button>
+    </div></div>
+
+    <div id="project4" class="modal"><div class="modal-content">
+      <img src="./img/coverBuku.png" alt="" width="500">
+      <h3>Buku</h3><p>Membangun web server, mail server dan cloud server.</p>
+      <button onclick="closeModal('project4')">Tutup</button>
+    </div></div>
+
+    <footer>
+      © <span id="year"></span> Adrian Rizqynaya
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
